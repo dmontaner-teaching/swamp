@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js-2.6.1/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js-2.6.1/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" media="print" href="reveal.js-2.6.1/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js-2.6.1/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="swamp" class="slide level1">
+<h1>SWAMP</h1>
+<h2>
+Sewage Water Analysis
+</h2>
+<h2>
+Metagenomic Platform
+</h2>
+
+<p><a href="http://www.dmontaner.com/">David Montaner</a></p>
+<p><strong><a href="http://bioinfo.cipf.es/">CIPF</a></strong></p>
+<p><em>(17-01-2014)</em></p>
+<p>in Valencia</p>
+</section>
+<section id="section" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="metagenomics" class="level2">
+<h2>Metagenomics</h2>
+<p> </p>
+<p><strong>Metagenomics</strong>: the study of genetic material collected from a mixed community of organisms.</p>
+<p> </p>
+<ul>
+<li>usually refers to the study of microbial communities</li>
+<li><p>but may be applied to explore any mixture of organisms</p></li>
+<li>research started with environmental samples</li>
+<li><p>but clinical applications have been developed just after</p></li>
+</ul>
+</section>
+<section id="publications-environment" class="level2">
+<h2>Publications: environment</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://www.ncbi.nlm.nih.gov/pubmed/15001713" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/15001713">http://www.ncbi.nlm.nih.gov/pubmed/15001713</a></p>
+</section>
+<section id="publications-water" class="level2">
+<h2>Publications: water</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://www.ncbi.nlm.nih.gov/pubmed/21915244" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/21915244">http://www.ncbi.nlm.nih.gov/pubmed/21915244</a></p>
+</section>
+<section id="publications-other-environment" class="level2">
+<h2>Publications: other environment</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://www.ncbi.nlm.nih.gov/pubmed/24412260" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/24412260">http://www.ncbi.nlm.nih.gov/pubmed/24412260</a></p>
+</section>
+<section id="publications-human-microbiome" class="level2">
+<h2>Publications: human microbiome</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://www.ncbi.nlm.nih.gov/pubmed/21682646" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/21682646">http://www.ncbi.nlm.nih.gov/pubmed/21682646</a></p>
+</section>
+</section>
+<section id="section-1" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="human-microbiome-project" class="level2">
+<h2>Human microbiome project</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://commonfund.nih.gov/hmp/index" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://commonfund.nih.gov/hmp/index">http://commonfund.nih.gov/hmp/index</a></p>
+</section>
+<section id="human-microbiome-sites" class="level2">
+<h2>Human microbiome sites</h2>
+<p> </p>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:550px;">
+<img src="images/microbiome_sites.jpg" />
+</div>
+</section>
+</section>
+<section id="section-2" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="metagenomic-experiments" class="level2">
+<h2>Metagenomic experiments</h2>
+<ul>
+<li>Extract DNA: Metagenomics
+<ul>
+<li>whole genome</li>
+<li>specific genes
+<ul>
+<li>16S</li>
+<li>18S</li>
+</ul></li>
+</ul></li>
+<li>Extract RNA: Meta transcriptomics</li>
+</ul>
+<p> </p>
+<p>Questions</p>
+<ul>
+<li>which <em>known</em> organisms are present</li>
+<li>which <em>unknown</em> organisms are present</li>
+<li>which genes/functions are <em>present</em></li>
+<li>which genes/functions are <em>active</em></li>
+</ul>
+</section>
+</section>
+<section id="section-3" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="advantages-benefits" class="level2">
+<h2>Advantages &amp; Benefits</h2>
+<p> </p>
+<ul>
+<li><p>relative quantification</p></li>
+<li>using NGS can detect very low abundance organisms
+<ul>
+<li>relative</li>
+<li>absolute</li>
+</ul></li>
+<li><p>can explore non-cultivable microorganisms</p></li>
+</ul>
+</section>
+</section>
+<section id="section-4" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="s-18s-metagenomics" class="level2">
+<h2>16S / 18S metagenomics</h2>
+<ul>
+<li><strong>16S</strong> ribosomal RNA: prokaryotic (<strong>1542</strong> nt)</li>
+<li><strong>18S</strong> ribosomal RNA: eukaryotic (<strong>1869</strong> nt)</li>
+</ul>
+<p> </p>
+<ul>
+<li>highly conserved regions: use universal primers</li>
+<li>hypervariable regions: species-specific signature</li>
+</ul>
+<p> </p>
+<p>Databases</p>
+<ul>
+<li><a href="http://rdp.cme.msu.edu/">Ribosomal Database Project</a> ~ 3 million</li>
+<li><a href="http://www.arb-silva.de/">SILVA</a> ~ 4 million</li>
+<li><a href="http://oklbb.ezbiocloud.net/">EzTaxon</a></li>
+<li><a href="http://greengenes.lbl.gov/cgi-bin/nph-index.cgi">Greengenes</a></li>
+</ul>
+</section>
+</section>
+<section id="section-5" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="bioinformatics-pipeline" class="level2">
+<h2>Bioinformatics pipeline</h2>
+<div style="position:absolute; left:1em; z-index:-1; max-height:550px; width:70%;">
+<img src="images/analysis_pipeline_metamos.jpg" />
+</div>
+<div style="position:absolute; right:1em; z-index:1; height:100%; width:30%;">
+<p> </p>
+<p>In summary:</p>
+<p> </p>
+<ul>
+<li><p>map NGS reads against all known 16S / 18S genes</p></li>
+<li><p>quantify the species</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="section-6" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="results-one-sample" class="level2">
+<h2>Results: one sample</h2>
+<div style="width:100%;height:100%;">
+<iframe src="http://krona.sourceforge.net/examples/rdp.krona.html" style="width:100%;height:70%"></iframe>
+</div>
+
+<p><a href="http://krona.sourceforge.net/examples/rdp.krona.html">http://krona.sourceforge.net/examples/rdp.krona.html</a></p>
+</section>
+</section>
+<section id="section-7" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="results-compare-between-samples" class="level2">
+<h2>Results: compare between samples</h2>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:500px;">
+<img src="images/bar_plot1.jpg" />
+</div>
+</section>
+<section id="results-by-microbial-type" class="level2">
+<h2>Results: by microbial type</h2>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:500px;">
+<img src="images/bar_plot2.jpg" />
+</div>
+</section>
+</section>
+<section id="section-8" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="results-functional-profiling" class="level2">
+<h2>Results: Functional Profiling</h2>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:500px;">
+<img src="images/functional_profiling.png" />
+</div>
+</section>
+</section>
+<section id="wastewater" class="slide level1">
+<h1>Wastewater</h1>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:450px;">
+<img src="images/pipe.jpg" />
+</div>
+</section>
+<section id="section-9" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="sewage-treatment-plant" class="level2">
+<h2>Sewage treatment plant</h2>
+<figure>
+<img src="images/edar.jpg" />
+</figure>
+<p>Mostly a biological treatment:</p>
+<p><em>bacterial</em> degradation of organic matter</p>
+</section>
+</section>
+<section id="section-10" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="biological-treatment" class="level2">
+<h2>Biological treatment</h2>
+<ul>
+<li><p>Secondary treatment: degrade the biological content. Aerobic microorganisms.</p></li>
+<li><p>Tertiary treatment: remove nitrogen, phosphorus, etc. Anaerobic microorganisms.</p></li>
+<li><p>Disinfection. <br> Control for <em>pathogenic</em> microorganisms.</p></li>
+</ul>
+<p> </p>
+<p>The microbial communities in the bioreactor and other areas of the treatment plant must be <strong>optimal</strong> to improve performance.</p>
+</section>
+<section id="inadequate-biological-treatment" class="level2">
+<h2>Inadequate biological treatment</h2>
+<ul>
+<li>biological digestion is not properly done</li>
+<li>too much algae proliferation</li>
+<li>increment in pathogen microorganisms</li>
+</ul>
+<p> </p>
+<ul>
+<li>longer treatment times</li>
+<li>more chemical treatments needed</li>
+<li>more energy consumption</li>
+</ul>
+<p> </p>
+<ul>
+<li>more expensive</li>
+<li>less safety for health and environment</li>
+</ul>
+</section>
+</section>
+<section id="section-11" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="water-screening-state-of-the-art" class="level2">
+<h2>Water Screening: State of the art</h2>
+<ul>
+<li>microscope count</li>
+<li>cell culture</li>
+</ul>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:450px;">
+<img src="images/water_screening.png" />
+</div>
+</section>
+</section>
+<section id="section-12" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="section-13" class="level2">
+<h2><!-- slide --></h2>
+<p> </p>
+<h1>
+<p>Can we use METAGENOMICS?<h/1></p>
+</section>
+</section>
+<section id="explora-tecnologia" class="slide level1">
+<h1>EXPLORA TECNOLOGIA</h1>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:450px;">
+<img src="images/explorador.gif" />
+</div>
+<p>SWAMPer</p>
+</section>
+<section id="section-14" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="objective" class="level2">
+<h2>Objective</h2>
+<p align="left">
+SWAMP proposal:
+<p>
+
+<p>pilot study to attempt</p>
+<p>sewage water analysis</p>
+<p>using <em>next generation sequencing</em></p>
+<p>and metagenomics</p>
+<p align="left">
+Main objectives:
+<p>
+
+<ul>
+<li>Is a unique sample representative?</li>
+<li>Will work for any treatment plant?</li>
+<li>Will improve standard methodologies?</li>
+<li>Which is the minimum amount of water?</li>
+</ul>
+</section>
+</section>
+<section id="section-15" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="study" class="level2">
+<h2>Study</h2>
+<ul>
+<li>Take water form 7 treatment plants in Valencia</li>
+<li>8 different places in the bioreactor</li>
+</ul>
+<p> </p>
+<ul>
+<li>Sequence with decreasing amounts of water</li>
+<li>Compare within treatment plant</li>
+<li>Compare with the standards</li>
+</ul>
+</section>
+<section id="treatment-plants-in-valencia" class="level2">
+<h2>Treatment Plants In Valencia</h2>
+<ol type="1">
+<li>El Palmar</li>
+<li>Massarrojos</li>
+<li>Pinedo 1</li>
+<li>Pinedo 2</li>
+<li>Vera</li>
+<li>El Saler</li>
+<li>El Perellonet</li>
+</ol>
+</section>
+</section>
+<section id="section-16" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="long-term-objectives" class="level2">
+<h2>Long term objectives</h2>
+<p>Next Explora?</p>
+<p> </p>
+<ul>
+<li>cheap kit for DNA <em>outdoors</em> stabilization</li>
+<li>cheap NGS</li>
+<li>more specific primers</li>
+<li>speed up computation</li>
+<li>curate and combine databases</li>
+<li>distribution logistics</li>
+</ul>
+</section>
+</section>
+<section id="section-17" class="slide level1">
+<h1><!-- slide --></h1>
+<section id="questions" class="level2">
+<h2>Questions</h2>
+<div style="margin-left:auto; margin-right:auto; max-with:100%; max-height:450px;">
+<img src="images/explorador.gif" />
+</div>
+</section>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js-2.6.1/lib/js/head.min.js"></script>
+  <script src="reveal.js-2.6.1/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'default', // available themes are in /css/theme
+        transition: 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js-2.6.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js-2.6.1/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js-2.6.1/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js-2.6.1/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js-2.6.1/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
