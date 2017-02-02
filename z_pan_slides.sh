@@ -51,8 +51,8 @@
 # pandoc --standalone --template=default.revealjs --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:beige -V transition:cube  -f markdown -t html5    -o diapos2.html   slides.md
 # pandoc              --template=default.revealjs --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:beige -V transition:cube  -f markdown -t html5    -o diapos3.html   slides.md
 
- pandoc    --standalone --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:default -V transition:cube -f markdown -t revealjs -o index.html     index.md   ##PARECE EL MEJOR  
- pandoc    --standalone --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:default -V transition:cube -f markdown -t revealjs -o index_img.html index_img.md
+ pandoc    --standalone --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:default -V transition:cube -f markdown -t revealjs -o index_interactive.html     index_interactive.md   ##PARECE EL MEJOR  
+ pandoc    --standalone --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:default -V transition:cube -f markdown -t revealjs -o index.html index.md
 #pandoc -R --standalone --section-divs -V revealjs-url:reveal.js-2.6.1 -V theme:default -V transition:cube -f markdown -t revealjs -o agua_r.html agua.md   ##la -R no cambia nada
 
 
